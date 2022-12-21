@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Background colour and fount*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: salmon;
+    margin: 0;}
+
+/*Header; position fixed*/    
+header {background-color: rgb(64, 23, 229);
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border: 2px solid black;
+}
+
+/*Navigation bar; position fixed*/
+nav {
+    position: fixed;
+    top: 175px;
+    text-align: right;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    right: 0;
+    left: 0;
+    border: 2px solid black;
+}
+
+/*Welcome heading*/
+.welcome h2 {
+    text-align: center;
+}
+
+/*Welcome text box*/
+.welcome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Welcome text*/
+.welcome p {
+    text-align: justify;
+}
+
+/*Museum photograph and caption container*/
+.cube{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Museum photograph*/
+#museum {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Museum photograph caption*/
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Height of paintings*/
+img {
+    height: 300px;
+}
+
+/*First three paintings*/
+.paintings1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    text-align: center;
+}
+
+/*Second three paintings*/
+.paintings2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    text-align: center;
+}
+
+/*Contact information for the Cubist Museum 
+and Copyright Information for the website*/
+footer {
+    text-align: center;
+    border: 2px solid black;
+    background-color:cornflowerblue;
+}
