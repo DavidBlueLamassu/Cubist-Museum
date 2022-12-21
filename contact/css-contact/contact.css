@@ -1,0 +1,102 @@
+/*Fount and background colour*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: salmon;
+}
+
+/*Header formatting*/
+header {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Grid setup (a four-by-four grid)*/
+.contactGrid {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 30% 5% 35% 30%;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "blank1 name input1 blank3"
+    "blank1 email input2 blank3"
+    "blank1 message input3 blank3"
+    "blank1 send send blank2"
+    ;
+}
+
+/*Formatting for each of the grid cells; there are three blank
+sections to provide correct spacing*/
+#name {
+    display: flex;
+    grid-area: name;
+    align-items: end;
+}
+
+#input1 {
+    display: flex;
+    grid-area: input1;
+    align-items: end;
+}
+
+#email {
+    display: flex;
+    grid-area: email;
+    align-items: center;
+}
+
+#input2 {
+    display: flex;
+    grid-area: input2;
+    align-items: center;
+}
+
+#message {
+    grid-area: message;
+}
+
+#input3 {
+    grid-area: input3;
+}
+
+#blank1 {
+    grid-area: blank1;
+}
+
+#blank2 {
+    grid-area: blank2;
+}
+
+#blank3 {
+    grid-area: blank3;
+}
+
+#message2 {
+    width: 500px;
+    height: 250px;
+}
+
+#input1a {
+    width: 300px;
+}
+
+#input2a {
+    width: 300px;
+}
+
+#nameStyle {
+    margin: 0;
+}
+
+#send {
+    display: flex;
+    grid-area: send;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    margin-left: 45px;
+}
